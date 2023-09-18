@@ -6,6 +6,6 @@ const { auth, adminCheck } = require("../Middleware/auth");
 
 // http://localhost:8080/api/user
 router.get("/user", auth, adminCheck, list);
-router.post("/change-role", auth, adminCheck, changeRole);
+router.post("/change-role",auth, adminCheck, changeRole);
 
 module.exports = router;
