@@ -24,4 +24,4 @@ readdirSync('./Routes')
     .map((r) => app.use('/api', require('./Routes/' + r)));
 
 
-app.listen(5005, () => console.log('Server is Running 5005'));
+app.listen(5000, () => console.log('Server is Running 5000'));
